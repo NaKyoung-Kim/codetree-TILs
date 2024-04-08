@@ -8,7 +8,7 @@ for i in range(4*n-3):
         continue
     if flag == 0:
         print("*"*cnt)
-        if i == 8:
+        if i == 2*n-2:
             flag = 1
             cnt -= 1
         else:
