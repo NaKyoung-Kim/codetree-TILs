@@ -1,13 +1,13 @@
-import sys
+# import sys
 
-read = sys.stdin.readline
+# read = sys.stdin.readline
 strs = []
-n = int(read())
+n = int(input())
 
 for i in range(n):
-    strs.append(read().strip())
+    strs.append(input())
 
-lower = read()
+lower = input()
 cnt = 0
 length = 0
 
