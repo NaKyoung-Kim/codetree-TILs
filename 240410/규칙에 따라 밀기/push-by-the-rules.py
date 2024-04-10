@@ -13,7 +13,7 @@ if LorR > 0:
     move = str_in[:LorR]
     str_in = str_in[LorR:]+move
 elif LorR < 0:
-    move = str_in[-(LorR):]
+    move = str_in[LorR:]
     str_in = move+str_in[:LorR]
 
 print(str_in)
