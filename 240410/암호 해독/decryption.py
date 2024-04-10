@@ -5,7 +5,7 @@ cursor = 0
 
 for s in str_in:
     if s == '-':
-        if len(result) > 0:
+        if len(result) > 0 and cursor-1 >= 0:
             del result[cursor-1]
     elif s == '>':
         if cursor < len(result):
