@@ -1,6 +1,3 @@
-# import sys
-
-# read = sys.stdin.readline
 strs = []
 n = int(input())
 
