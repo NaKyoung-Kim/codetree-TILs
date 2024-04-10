@@ -1,6 +1,7 @@
 str_in = input()
 command = input()
 
+total_len = len(str_in)
 LorR = 0
 
 for c in command:
@@ -8,6 +9,13 @@ for c in command:
         LorR += 1
     else:
         LorR -= 1
+
+if LorR >= total_len:
+    while LorR > total_len:
+        LorR -= total_len
+elif LorR <= -(total_len):
+    while LorR < -total_len:
+        LorR += total_len
 
 if LorR > 0:
     move = str_in[:LorR]
